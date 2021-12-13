@@ -9,5 +9,11 @@ module.exports = ({ env }) => ({
       password: env('DATABASE_PASSWORD', '1111'),
       ssl: env.bool('DATABASE_SSL', false),
     },
+    
+  production: {
+    client: 'postgres',
+    connection: process.env.DATABASE_URL,
+    
+  },
   },
 });
