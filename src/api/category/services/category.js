@@ -2,7 +2,7 @@
 
 /**
  * category service.
- */s
+ */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
